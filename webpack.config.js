@@ -16,7 +16,19 @@ module.exports = {
         // more custom, pass a path to it. I.e., babel?cacheDirectory=<path>
         loaders: ['babel?cacheDirectory'],
         include: __dirname + '/src',
-      }
+      },
+      {
+    test:   /\.scss/,
+    loaders: ['style', 'css', 'sass']
+    //include: __dirname + '/src'
+},
+{
+    test:   /\.html/,
+    loader: 'html',
+}
         ],
-    }
+    },
+    devServer: {
+    hot: true,
+}
 };

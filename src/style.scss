@@ -1,0 +1,18 @@
+ body{
+  background: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:white;
+  font-family: Helvetica Neue;
+}
+
+.selected{
+  background: #bbb;
+}
+
+h1{
+  font-size: 4em;
+  color: #eee;
+  display: inline-block;
+}
